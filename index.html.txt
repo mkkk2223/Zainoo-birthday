@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zeina Birthday ❤️</title>
+  <style>
+    body {
+      background: linear-gradient(to right, #ff9a9e, #fad0c4);
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      margin-top: 100px;
+      background: rgba(0,0,0,0.3);
+      padding: 40px;
+      border-radius: 20px;
+      width: 80%;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 40px;
+    }
+
+    h2 {
+      margin-top: 20px;
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-top: 20px;
+      line-height: 1.5;
+    }
+
+    button {
+      margin: 15px;
+      padding: 12px 25px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .yes {
+      background: #ff4b5c;
+      color: white;
+    }
+
+    .no {
+      background: #555;
+      color: white;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    .heart {
+      font-size: 50px;
+      animation: beat 1s infinite;
+    }
+
+    @keyframes beat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="heart">❤️</div>
+
+    <h1>Dear Zeina</h1>
+
+    <h2>13 / 3 / 2026</h2>
+
+    <p>
+      On your special day, I just want you to know  
+      how amazing and special you are to me.
+      <br><br>
+      You make my days brighter and my smile bigger,
+      and I’m really grateful to know you.
+    </p>
+
+    <h2>Will you go out with me? 💖</h2>
+
+    <button class="yes" onclick="yesClick()">Yes 😍</button>
+    <button class="no" onclick="noClick()">No 🙈</button>
+
+    <p id="answer"></p>
+  </div>
+
+  <script>
+    function yesClick() {
+      document.getElementById("answer").innerHTML =
+        "Best birthday gift ever ❤️🥰<br>I can’t wait to see you!";
+    }
+
+    function noClick() {
+      document.getElementById("answer").innerHTML =
+        "Still wishing you the happiest birthday 😊💖";
+    }
+  </script>
+
+</body>
+</html>
